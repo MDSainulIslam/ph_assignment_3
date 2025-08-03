@@ -16,17 +16,26 @@
 
 
 
-var initialHeight = 1;
-var growthRate = 10/100;
-var totalYears = 20;
-var currentHeight = 0;
+// var initialHeight = 1;
+// var growthRate = 10/100;
+// var totalYears = 20;
+// var currentHeight = 0;
 
-for (var year=1; year<=totalYears; year++) {
-    currentHeight = currentHeight + initialHeight * growthRate;
+// for (var year=1; year<=totalYears; year++) {
+//     currentHeight = currentHeight + initialHeight * growthRate;
+// }
+// console.log(currentHeight);
+
+
+
+
+/** Problem 04 - (Delete / Store) */
+var fileName= "pdfData.jpg";
+//write your code here
+
+if(fileName.includes("#") || fileName.includes(".pdf") || fileName.includes(".docx")){
+    console.log("Store")
 }
-console.log(currentHeight);
-
-
-
-
-
+else{
+    console.log("Delete")
+}

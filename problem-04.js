@@ -2,7 +2,8 @@
 var fileName= "pdfData.jpg";
 //write your code here
 
-if(fileName.includes("#") || fileName.includes(".pdf") || fileName.includes(".docx")){
+var hashSign = fileName.slice(0,1);
+if(hashSign=="#" || fileName.includes(".pdf") || fileName.includes(".docx")){
     console.log("Store")
 }
 else{
