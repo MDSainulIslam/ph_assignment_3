@@ -23,7 +23,7 @@ else if(money>=10000){
 }
 else{
     console.log("Chocolate");
-};
+}
 
 
 
@@ -57,7 +57,7 @@ var fileName= "pdfData.jpg";
 //write your code here
 
 var hashSign = fileName.slice(0,1);
-if(hashSign=="#" || fileName.endsWith("pdf") || fileName.endsWith("docx")){
+if(hashSign=="#" || fileName.endsWith(".pdf") || fileName.endsWith(".docx")){
     console.log("Store")
 }
 else{
@@ -93,7 +93,7 @@ var startingSalary = 45000;
 var currentSalary = startingSalary;
 var rateOfIncriment = 5/100;
 
-for(i=1; i<=experience; i++){
+for(var i=1; i<=experience; i++){
     currentSalary = currentSalary + currentSalary*rateOfIncriment;
 }
 
