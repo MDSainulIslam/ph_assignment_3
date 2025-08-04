@@ -11,9 +11,6 @@ console.log(output);
 
 
 
-
-
-
 /** Problem -02 ( Cycle or Laptop ) */
 var money = 10000;
 //write your code here
@@ -34,15 +31,12 @@ else{
 
 
 
-
-
-
 /** Problem -03 ( Medicine Planner ) */
 var lastDay = 11 ;
 //write your code here
 
 var firstDay = 1;
-for (i = firstDay; i <= lastDay; i++){
+for (var i = firstDay; i <= lastDay; i++){
     
     if(i%3===0){
         console.log(i + " - " + "medicine");
@@ -58,24 +52,17 @@ for (i = firstDay; i <= lastDay; i++){
 
 
 
-
-
-
 /** Problem 04 - (Delete / Store) */
 var fileName= "pdfData.jpg";
 //write your code here
 
 var hashSign = fileName.slice(0,1);
-if(hashSign=="#" || fileName.includes(".pdf") || fileName.includes(".docx")){
+if(hashSign=="#" || fileName.endsWith("pdf") || fileName.endsWith("docx")){
     console.log("Store")
 }
 else{
     console.log("Delete")
 }
-
-
-
-
 
 
 
@@ -91,9 +78,6 @@ var studentRoll =student.roll;
 var departmentName = student.department;
 
 console.log(studentName + studentRoll + "." + departmentName + "@ph.ac.bd");
-
-
-
 
 
 
